@@ -717,7 +717,7 @@ __metadata:
     react: "npm:^19.2.3"
     react-dom: "npm:^19.2.3"
     react-icons: "npm:^5.5.0"
-    styled-components: "npm:^6.2.0"
+    styled-components: "npm:^6.3.5"
     styled-normalize: "npm:^8.1.1"
   languageName: unknown
   linkType: soft
@@ -892,7 +892,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.2.0":
+"styled-components@npm:^6.3.5":
   version: 6.3.5
   resolution: "styled-components@npm:6.3.5"
   dependencies:
