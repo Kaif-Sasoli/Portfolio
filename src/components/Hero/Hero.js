@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { Section, SectionText, SectionText2, SectionText3, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
@@ -14,16 +15,16 @@ const Hero = (props) => (
            <SectionText>
              Hello! I’m Muhammad Kaif, a backend developer passionate about Node.js, Express.js, and Spring Boot.<br/>
            </SectionText>
-           <Button>
-            <a
-              href="/images/Muhammad-Kaif_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'white' }}
-            >
+           <Button 
+              as={Link} 
+              
+              href="/images/Muhammad-Kaif_CV.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{ color: 'white' }}>
               Download CV
-              </a>
-                         </Button>
+            </Button>
+
                      </LeftSection>
                      
                 </Section>

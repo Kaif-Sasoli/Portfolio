@@ -22,7 +22,7 @@ const Footer = () => {
       <SocialIconsContainer>
          <CompanyContainer>
             <Slogan>
-                Innovating one project at a time 
+                Building intelligent, scalable backend solutions.
             </Slogan>
          </CompanyContainer>
          <SocialIcons href='https://github.com/Kaif-Sasoli'>

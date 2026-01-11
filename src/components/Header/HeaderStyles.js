@@ -1,4 +1,5 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -15,6 +16,22 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+  }
+`;
+
+// Styled Link directly
+export const StyledLink = styled(Link)`
+  font-size: 2rem;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.4s ease;
+  &:hover {
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.5rem;
   }
 `;
 
@@ -50,7 +67,7 @@ export const Div3 = styled.div`
 `;
 
 // Navigation Links
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);

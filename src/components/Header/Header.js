@@ -6,33 +6,34 @@ import { SiFiverr } from 'react-icons/si';
 import { TbBrandFiverr } from "react-icons/tb";
 import { FiverrSVG } from '../../styles/GlobalComponents';
 
-import { Container, Div1, Div2, Div3, Span, NavLink, SocialIcons, SocialIconsF } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, Span, NavLink, StyledLink, SocialIcons, SocialIconsF } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
       <Div1>
-           <Link href='/'>
-               <a style={{display:'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}> 
-                    <DiCssdeck size="3rem"/> <Span>Portfolio</Span>
-               </a>
-           </Link>
+           <Link
+            href="/"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              color: 'white',
+              marginBottom: '20px'
+            }}
+          >
+            <DiCssdeck size="3rem" />
+            <Span>Portfolio</Span>
+          </Link>
       </Div1>
      
        <Div2>
             <li>
-               <Link href='#projects'>
-                    <NavLink>Projects</NavLink> 
-               </Link>
+               <StyledLink href='#projects'>Projects</StyledLink>
             </li>
             <li>
-               <Link href='#tech'>
-                    <NavLink>Technologies</NavLink> 
-               </Link>
+              <StyledLink href='#technologies'>Technologies</StyledLink>
             </li>
             <li>
-               <Link href='#about'>
-                    <NavLink>About</NavLink> 
-               </Link>
+               <StyledLink href='#abut'>About</StyledLink>
             </li>
       </Div2>
       <Div3>
